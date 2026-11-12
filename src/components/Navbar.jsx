@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logoLight from '../assets/images/logo.png';
 import logoDark from '../assets/images/logo-black.png';
-import { NAV_SECTIONS } from '../data/content';
+import { NAV_SECTIONS, WEB_APP_URL } from '../data/content';
 import useTheme from '../hooks/useTheme';
 
 const SCROLL_THRESHOLD = 10;
@@ -58,6 +58,9 @@ export default function Navbar() {
           </ul>
 
           <div className="nav-actions">
+            <a className="btn btn-primary btn-sm" href={WEB_APP_URL} target="_blank" rel="noopener noreferrer">
+              Sign up
+            </a>
             <button
               type="button"
               className="icon-btn"

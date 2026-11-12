@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import phone from '../../assets/images/iphone-screen.png';
 import StoreBadges from '../StoreBadges';
+import { WEB_APP_URL } from '../../data/content';
 
 export default function Hero() {
   return (
@@ -15,10 +16,15 @@ export default function Hero() {
             everything you need to streamline your operations.
           </p>
           <div className="hero-actions">
-            <StoreBadges />
+            <a className="btn btn-primary" href={WEB_APP_URL} target="_blank" rel="noopener noreferrer">
+              Sign up and try it
+            </a>
             <Link className="text-link" to={{ pathname: '/', hash: '#video' }}>
               Watch the demo &rarr;
             </Link>
+          </div>
+          <div className="hero-stores">
+            <StoreBadges />
           </div>
         </div>
         <div className="hero-visual">

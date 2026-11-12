@@ -2,6 +2,9 @@
 export const PLAY_STORE_URL =
   'https://play.google.com/store/apps/details?id=com.nazapaystore.nazapaystore&hl=en_ZA';
 
+// Web admin app where new users can try ePocketShop and sign up.
+export const WEB_APP_URL = 'https://epocketshopadmin.vercel.app/';
+
 export const CONTACT_EMAIL = 'info@epocketshop.co.za';
 const VIDEO_ID = '8B7vs6QKKFE';
 export const VIDEO_URL = `https://www.youtube.com/embed/${VIDEO_ID}`;

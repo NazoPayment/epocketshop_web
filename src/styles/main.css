@@ -122,6 +122,24 @@ button {
   filter: brightness(1.08);
 }
 
+.btn-sm {
+  height: 38px;
+  padding: 0 16px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.hero-stores {
+  margin-top: 20px;
+}
+
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+}
+
 .text-link {
   font-weight: 600;
   color: var(--text);
